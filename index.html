@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="cargar_productos/productos.css">
+    <link rel="stylesheet" href="cargar_categoria/categorias.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="logo">
+            <img src="https://www.ecoprana.com.pe/wp-content/uploads/2023/09/mobilepants_sinfondo.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
+        <div class="categories">
+            <button class="category_btn" data-category="electronics">Electronics</button>
+            <button class="category_btn" data-category="jewelery">Jewelery</button>
+            <button class="category_btn" data-category="men's clothing">Men's Clothing</button>
+            <button class="category_btn" data-category="women's clothing">Women's Clothing</button>
+        </div>
+    </div>
+    
+    <main id="root">
+        <div id="div_product_list"></div>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="cargar_productos/cargar_productos.js"></script>
+</body>
+</html>
